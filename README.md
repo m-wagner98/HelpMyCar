@@ -2,8 +2,6 @@
 
 
 
-[![pipeline status](https://git.caruso-dataplace.com/student-project-sep-hs-mannheim/greenbox-collective/badges/master/pipeline.svg)](https://git.caruso-dataplace.com/student-project-sep-hs-mannheim/greenbox-collective/-/commits/master)
-
 This is the repository of the SEP / IAD student project of team Greenbox Collective.
 The goal of this project is to create a roadside assistance application that uses the Caruso API to gather vehicle information, 
 which is used to support both the driver and the assistance operator.
