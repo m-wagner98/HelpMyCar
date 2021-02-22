@@ -1,0 +1,40 @@
+@import "../../../shared/styles/colors.scss";
+
+mat-expansion-panel {
+  background: $darkgrey;
+  border-radius: 20px;
+  color: $white-font;
+  margin-bottom: 0.5em;
+}
+
+
+p {
+  margin: 1em 0;
+  text-align: left;
+  color: $white-font;
+}
+
+#control-sign {
+  margin-left: 1em;;
+}
+
+#control-sign-icon {
+  width: 15%;
+}
+
+#control-sign-name {
+  margin-left: 2em;
+  color: $red;
+}
+
+[id^="mat-expansion-panel-header-"]:hover {
+  background: transparent!important;
+}
+
+[id^="mat-expansion-panel-header-"]:focus {
+  background: transparent!important;
+}
+
+::ng-deep .mat-expansion-indicator::after {
+  color: $white-font;
+}

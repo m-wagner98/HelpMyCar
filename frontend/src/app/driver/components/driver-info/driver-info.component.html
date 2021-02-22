@@ -1,0 +1,26 @@
+<div *ngIf="driver">
+  <p><strong>Driver</strong></p>
+  <table>
+    <tr>
+      <td>Name</td>
+      <td>{{driver.firstName}} {{driver.lastName}}</td>
+    </tr>
+    <tr>
+      <td>Customer Number</td>
+      <td>{{driver.customerNumber}}</td>
+    </tr>
+    <tr>
+      <td>Residence</td>
+      <td>{{driver.residence}}</td>
+    </tr>
+    <tr>
+      <td>Phone number</td>
+      <td>{{this.driver.phoneNumber}}</td>
+    </tr>
+    <tr>
+      <td>E-mail</td>
+      <td>{{driver.email}}</td>
+    </tr>
+  </table>
+  <br>
+</div>

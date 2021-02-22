@@ -1,0 +1,7 @@
+<p (mouseenter)="mouseenterDamage()" (mouseleave)="mouseleaveDamage()" [ngClass]="{'hover-effect': showHoverEffect}"
+   class="pointer">
+  DTC-ID: {{troubleCode.dtcId}}<br>
+  <span *ngIf="getTranslation(troubleCode.dtcId)">Description: {{getTranslation(troubleCode.dtcId)}}<br></span>
+  <span *ngIf="troubleCode.occurrences">Occurrences: {{troubleCode.occurrences}}<br></span>
+  Timestamp: {{convertTimestamp(troubleCode.timestamp)}}
+</p>

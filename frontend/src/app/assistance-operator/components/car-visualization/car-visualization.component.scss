@@ -1,0 +1,93 @@
+@import "../../../shared/styles/colors.scss";
+
+ngb-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.car-visualization {
+  margin: auto;
+}
+
+#description {
+  background-color: #676767;
+  color: #FBFBFB;
+  padding: 12px 20px;
+  margin-bottom: 1em;
+  border-radius: 20px;
+  display: none;
+  position: fixed;
+  opacity: 0.9;
+  // width: 15em;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #676767 transparent;
+  }
+}
+
+.display-unset {
+  display: unset !important;
+}
+
+// svg styling
+.st0 {
+  fill: #2C2B3B;
+  stroke: #FFFFFF;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  pointer-events: none;
+}
+
+.st1 {
+  fill: #FF624D80;
+  stroke: #FF624D;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  display: none;
+}
+
+.st3 {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 1px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  pointer-events: none;
+}
+
+.st4 {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 1px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  pointer-events: none;
+}
+
+.st0, .st1, .st3, .st4 {
+  transform: translateY(-260px);
+}

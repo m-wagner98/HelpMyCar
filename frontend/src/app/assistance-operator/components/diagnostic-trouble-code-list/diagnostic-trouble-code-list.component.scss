@@ -1,0 +1,55 @@
+@import "../../../shared/styles/colors.scss", "../../../shared/styles/fonts.scss";
+
+mat-expansion-panel {
+  border-radius: 20px;
+  background: $lightgrey;
+  color: $white-font;
+  padding: 12px 0;
+  padding-bottom: 20px;
+}
+
+h2 {
+  cursor: initial;
+}
+
+.mat-expansion-panel-header-title {
+  flex-direction: column;
+  padding: 0;
+  margin-right: 0;
+}
+
+::ng-deep .mat-expansion-panel-body {
+  padding-bottom: 0 !important;
+}
+
+.mat-expansion-panel-header {
+  cursor: default;
+}
+
+#mat-expansion-panel-header-1:focus {
+  background: transparent;
+}
+
+#mat-expansion-panel-header-1:hover {
+  background: transparent;
+}
+
+#down-wrapper {
+  display: flex;
+  align-items: flex-end;
+  color: $white-font;
+  position: relative;
+  z-index: 10;
+  height: 0;
+}
+
+#toggle-arrow {
+  width: 100%;
+  text-align: center;
+}
+
+.rotate-180 {
+  transition: all 280ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  transform: rotate(180deg);
+}
+

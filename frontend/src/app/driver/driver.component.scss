@@ -1,0 +1,97 @@
+@import "../shared/styles/colors.scss", "../shared/styles/fonts.scss";
+
+.border-img {
+  position: absolute;
+  height: 1014px;
+  margin: auto;
+  padding-left: 19.5px;
+  pointer-events: none;
+  z-index: 1000;
+  display: none;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  color: $white-font;
+}
+
+.container-wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(min-width: 380px) {
+  #app {
+    width: 375px;
+    height: 812px;
+    background-color: $semi-dark-blue;
+  }
+  .border-img {
+    display: block;
+  }
+}
+
+#app {
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  overflow-y: auto;
+}
+
+/* Chrome hide scrollbar */
+::ng-deep ::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+/* Firefox hide scrollbar */
+::ng-deep :root {
+  scrollbar-width: none;
+}
+
+
+main {
+  padding: 1.5em;
+  flex: 1 1 auto;
+  background: $gradient;
+  top: auto;
+  margin-top: 4.3125em;
+}
+
+header {
+  padding: 1.25em;
+  display: flex;
+  position: fixed;
+  width: inherit;
+  height: 4.3125em;
+  background: $semi-dark-blue;
+  z-index: 10;
+  color: white;
+  margin-top: 1em;
+
+  #help-my-car {
+    font: $light-manrope;
+    align-self: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+
+    span {
+      font-size: 1.5em;
+    }
+  }
+}
+
+header app-menue, app-personal-menu, mat-icon {
+  align-self: center;
+}
+
+app-personal-menu {
+  margin-left: auto;
+}

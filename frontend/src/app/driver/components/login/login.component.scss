@@ -1,0 +1,108 @@
+@import "../../../shared/styles/colors.scss";
+
+div {
+  height: 80% !important;
+  width: 90% !important;
+  margin-right: 0;
+  margin-left: 2em;
+}
+
+mat-card {
+  overflow: hidden;
+  margin-top: 6em;
+  border-radius: 20px;
+  color: $white-font;
+  background: #6767674D;
+  box-shadow: 0 3px 6px #00000029;
+  border: 0.5px solid #2D2D2D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80% !important;
+  width: 90% !important;
+  text-align: center;
+}
+
+mat-card-content {
+  height: 100%;
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.input {
+  background: #CCCCCC38;
+  width: 100% !important;
+  border-radius: 7px;
+  padding: 3px;
+  font-size: 1.2em;
+}
+
+mat-hint {
+  color: red;
+  font-size: smaller;
+  margin-left: 1em;
+}
+
+mat-card-title {
+  margin-bottom: 1em;
+  margin-top: 1em !important;
+}
+
+button {
+  background: #CCCCCC38;
+  text-align: center;
+  color: $white-font;
+  border: 0.5px solid #707070
+}
+
+#confirm {
+  width: 50%;
+  height: 10%;
+  margin-top: 1em;
+  border-radius: 12px;
+}
+
+p {
+  font-size: 1em;
+  color: #FFFFFF;
+  margin-bottom: 1.5em;
+}
+
+/*
+#forgot-password {
+  font-size: 0.7em;
+  margin-top: 0.5em;
+  text-align: center;
+}*/
+
+.label {
+  margin: 0.5em 0 0.2em;
+}
+
+label {
+  margin: 0;
+}
+
+mat-form-field {
+  width: 100%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+::ng-deep .mat-form-field-wrapper {
+  padding-bottom: 0 !important;
+}
+
+::ng-deep .mat-form-field-infix {
+  border: 0;
+  padding: 0;
+}
+
+#pw {
+  margin-bottom: 1em;
+}
+
+#name {
+  margin-top: 3em;
+}

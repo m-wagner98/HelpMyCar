@@ -1,0 +1,28 @@
+<div id="app">
+  <div id="sidebar">
+    <app-request-list></app-request-list>
+  </div>
+  <div *ngIf='requestOpen' id="detailed-view">
+    <div id="wrapper">
+      <div class="row" id="top-row">
+        <app-status ng-attr-id="progress" [id]="id"></app-status>
+        <h2><span id="help-my-car-logo"><span class="font-bold-manrope">Help</span>MyCar</span></h2>
+      </div>
+      <div id="center-row" class="row">
+        <div id="column-1">
+          <app-driver-information [id]="id"></app-driver-information>
+          <app-car-visualization [id]="id"></app-car-visualization>
+        </div>
+        <div id="column-2">
+          <app-diagnostic-trouble-code-list [id]="id"></app-diagnostic-trouble-code-list>
+          <app-check-control-message-list-aod [id]="id"></app-check-control-message-list-aod>
+        </div>
+      </div>
+      <div class="row" id="bottom-row">
+        <app-map [id]="id"></app-map>
+        <app-service-vehicle-list [id]="id"></app-service-vehicle-list>
+      </div>
+      <app-chat [id]="id"></app-chat>
+    </div>
+  </div>
+</div>

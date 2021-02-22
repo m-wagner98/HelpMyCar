@@ -1,0 +1,26 @@
+[
+  {
+    "vin": "V1RTUALV1N0000S10",
+    "type": "ON_SITE_VEHICLE"
+  },
+  {
+    "vin": "V1RTUALV1N0000S11",
+    "type": "ON_SITE_VEHICLE"
+  },
+  {
+    "vin": "V1RTUALV1N0000S08",
+    "type": "ON_SITE_VEHICLE"
+  },
+  {
+    "vin": "V1RTUALV1N0000S12",
+    "type": "TOWING_VEHICLE"
+  },
+  {
+    "vin": "V1RTUALV1N0000001",
+    "type": "TOWING_VEHICLE"
+  },
+  {
+    "vin": "V1RTUALV1N0000S09",
+    "type": "TOWING_VEHICLE"
+  }
+]

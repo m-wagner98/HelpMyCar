@@ -1,0 +1,6 @@
+<mat-card>
+  <h2>Warning Lights</h2>
+  <img *ngFor="let activeMessage of activeMessages" [ngbTooltip]="activeMessage.message" alt="checkcontrollmessage-icon"
+       class="icon" placement="bottom" src="{{activeMessage.icon}}" tooltipClass="description">
+  <img *ngFor="let icon of icons" alt="checkcontrollmessage-icon" class="icon" src="{{icon}}">
+</mat-card>

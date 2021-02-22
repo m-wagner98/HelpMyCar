@@ -1,0 +1,92 @@
+---
+apiVersion: getambassador.io/v2
+kind: Mapping
+metadata:
+  name: _APP_NAME_FRONT
+spec:
+  prefix: /
+  host: _APP_NAME_FRONT.caruso.cf
+  service: _APP_NAME_FRONT
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: _APP_NAME_FRONT
+spec:
+  selector:
+    app: _APP_NAME_FRONT
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: _APP_NAME_FRONT
+  labels:
+    app: _APP_NAME_FRONT
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: _APP_NAME_FRONT
+  template:
+    metadata:
+      labels:
+        app: _APP_NAME_FRONT
+    spec:
+      containers:
+        - name: test
+          image: _DOCKER_IMAGE_NAME_FRONT
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+
+---
+apiVersion: getambassador.io/v2
+kind: Mapping
+metadata:
+  name: _APP_NAME_BACK
+spec:
+  prefix: /api/
+  host: _APP_NAME_FRONT.caruso.cf
+  service: _APP_NAME_BACK
+  use_websocket: true
+
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: _APP_NAME_BACK
+spec:
+  selector:
+    app: _APP_NAME_BACK
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: _APP_NAME_BACK
+  labels:
+    app: _APP_NAME_BACK
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: _APP_NAME_BACK
+  template:
+    metadata:
+      labels:
+        app: _APP_NAME_BACK
+    spec:
+      containers:
+        - name: test
+          image: _DOCKER_IMAGE_NAME_BACK
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+

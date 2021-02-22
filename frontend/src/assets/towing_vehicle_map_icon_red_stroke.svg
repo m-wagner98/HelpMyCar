@@ -1,0 +1,23 @@
+<svg height="60.584" viewBox="0 0 42.537 60.584" width="42.537" xmlns="http://www.w3.org/2000/svg">
+  <g data-name="techniker karte" id="techniker_karte" transform="translate(-97.091 -252.681)">
+    <path
+      d="M25.768,2A20.753,20.753,0,0,0,5,22.768c0,15.576,20.768,38.57,20.768,38.57s20.768-22.993,20.768-38.57A20.753,20.753,0,0,0,25.768,2Z"
+      fill="#2c2b3b" id="ic_place_24px" stroke="#e06039" stroke-width="2" transform="translate(92.591 251.181)"/>
+    <g data-name="Gruppe 143" id="Gruppe_143" transform="translate(102.799 256.583)">
+      <circle cx="1.923" cy="1.923" data-name="Ellipse 158" fill="#fff" id="Ellipse_158" r="1.923"
+              transform="translate(4.164 19.114)"/>
+      <circle cx="1.923" cy="1.923" data-name="Ellipse 159" fill="#fff" id="Ellipse_159" r="1.923"
+              transform="translate(23.436 19.114)"/>
+      <path
+        d="M30.917,14.468a1.245,1.245,0,0,0-.113-.509S27.256,8.13,27.057,7.836a.521.521,0,0,0-.438-.272H21.336c-.524,0-.524.628-.524.628s.011,8.456,0,8.959a.585.585,0,0,1-.492.573s-18.237-.056-18.828-.07-.594.4-.594.4S.6,19.079.281,20.061s.43.911.43.911h2.76a2.643,2.643,0,0,1,5.286-.051l13.906-.134a2.642,2.642,0,0,1,5.268-.05l.215,0s1.917.01,2.316,0,.455-.521.455-.521S30.923,14.772,30.917,14.468Z"
+        data-name="Pfad 1347" fill="#fff" id="Pfad_1347" transform="translate(0)"/>
+      <circle cx="0.808" cy="0.808" data-name="Ellipse 160" fill="#fff" id="Ellipse_160" r="0.808"
+              transform="translate(5.217 14.753)"/>
+      <circle cx="0.808" cy="0.808" data-name="Ellipse 161" fill="#fff" id="Ellipse_161" r="0.808"
+              transform="translate(15.146 14.667)"/>
+      <path
+        d="M21.076,16.053c-1.109-.578-4.582-.761-4.582-.761l-2.785-1.643a12.661,12.661,0,0,0-3.7.006,14.082,14.082,0,0,0-3.052,1.257l-1.31.075a.5.5,0,0,0-.46.25,6.548,6.548,0,0,0-.125,2c.021.668.462.783.462.783l1.553.308a1.5,1.5,0,0,1,2.974.009l6.91.012a1.5,1.5,0,0,1,2.981,0h.045l1.2-.17A2.412,2.412,0,0,0,21.076,16.053Z"
+        data-name="Pfad 1348" fill="#fff" id="Pfad_1348" transform="translate(-2.518 -3.092)"/>
+    </g>
+  </g>
+</svg>

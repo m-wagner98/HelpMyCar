@@ -1,0 +1,15 @@
+@import "../../../shared/styles/colors.scss";
+
+::ng-deep .mat-menu-panel {
+  background-color: $darker-grey;
+  border-radius: 10px !important;
+
+  button {
+    color: $white-font;
+  }
+}
+
+::ng-deep .cdk-overlay-backdrop.cdk-overlay-backdrop-showing {
+  background-color: $grey-backdrop;
+  opacity: 0.4;
+}

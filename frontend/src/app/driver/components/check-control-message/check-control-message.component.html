@@ -1,0 +1,32 @@
+
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      <img alt="control sign icon" id="control-sign-icon" src="{{icon}}">
+      <p id="control-sign-name">{{title}}</p>
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <p *ngIf="value === 500" id="motor">
+    If the engine indicator light is glowing, you should seek urgent help. Driving with this problem can ruin your
+    engine.
+  </p>
+  <p *ngIf="value === 400" id="battery">
+    There are multiple reasons the battery symbol can light up. Stop immediately and check the v-ribbed belt. If this is
+    loose or cracked immediately request help.
+  </p>
+  <p *ngIf="value === 42" id="airbag">
+    {{message}}
+  </p>
+  <p *ngIf="value === 123 || value === 200 || value === 600">
+    If the break pad indicator appears, your break pads have worn off. You should download the Vefix App and schedule an
+    appointment with your local workshop.
+  </p>
+
+  <p *ngIf="value === 10 || value === 50" id="fuel">
+    {{message}}
+  </p>
+
+  <p *ngIf="value === 250" id="coolant">
+    When the temperature light comes on, it indicates that your engine is overheating and running too hot.
+  </p>
+</mat-expansion-panel>

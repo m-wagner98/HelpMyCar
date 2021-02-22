@@ -1,0 +1,22 @@
+<div>
+  <mat-card>
+    <mat-card-content (keydown.enter)="login(username.value)">
+      <mat-card-title>Login</mat-card-title>
+      <mat-form-field id="name" appearance="none">
+        <label id="username">
+          <p class="label">Username
+            <mat-hint *ngIf="!isUsernameValid">Username Invalid</mat-hint>
+          </p>
+          <input class="input" #username matInput required>
+        </label>
+      </mat-form-field>
+      <mat-form-field id="pw" appearance="none">
+        <label>
+          <p class="label">Password</p>
+          <input class="input" #password matInput required type="password">
+        </label>
+      </mat-form-field>
+      <button id="confirm" (click)="login(username.value)" mat-raised-button>Confirm</button>
+    </mat-card-content>
+  </mat-card>
+</div>

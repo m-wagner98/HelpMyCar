@@ -1,0 +1,775 @@
+[
+  {
+    "identifier": {
+      "value": "V1RTUALV1N0000004",
+      "type": "VIN"
+    },
+    "response": {
+      "dtc": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:04.971656446Z",
+          "value": [
+            {
+              "dtcs": [],
+              "seatingCapacity": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "geolocation": {
+        "dataPoint": {
+          "geoSystem": "WGS84",
+          "latitude": 49.44117,
+          "timestamp": "2020-06-17T15:08:04.971734094Z",
+          "longitude": 8.54031
+        }
+      },
+      "checkControlMessages": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:05.016734557Z",
+          "value": [
+            {
+              "seatingCapacity": 0,
+              "status": "OK",
+              "message": "Brake Pad Alert",
+              "value": 600
+            }
+          ]
+        }
+      },
+      "basicVehicleData": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:05.02043363Z",
+          "value": [
+            {
+              "vehicleSoftware": "VOS Rev1#c6c2d6ce566c3a6be013fe4ae24a8da636090876",
+              "seatingCapacity": 4,
+              "productionDate": "2020-04-22",
+              "registrationFirstDate": "2020-04-30",
+              "registrationCountry": "DE",
+              "brandName": "VirtualOEM",
+              "modelName": "B04-E",
+              "bodyType": "Sedan",
+              "colorText": "Red Metallic",
+              "colorCode": "XX04E",
+              "vehicleConfiguration": [
+                "HVB30",
+                "EC3",
+                "DC33",
+                "OE51"
+              ],
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "identifier": {
+      "value": "V1RTUALV1N0000S05",
+      "type": "VIN"
+    },
+    "response": {
+      "dtc": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:04.971656446Z",
+          "value": [
+            {
+              "dtcs": [],
+              "seatingCapacity": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "geolocation": {
+        "error": {
+          "code": "car.502.4",
+          "message": "Data-point not available."
+        }
+      },
+      "checkControlMessages": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:07:49.278696801Z",
+          "value": [
+            {
+              "seatingCapacity": 0,
+              "status": "CRITICAL",
+              "message": "Brake Pad Alert",
+              "value": 123
+            }
+          ]
+        }
+      },
+      "basicVehicleData": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:07:49.278696186Z",
+          "value": [
+            {
+              "vehicleSoftware": "VOS Rev2Static10.06.2020",
+              "seatingCapacity": 5,
+              "productionDate": "2020-06-10",
+              "registrationFirstDate": "2020-06-10",
+              "registrationCountry": "DE",
+              "brandName": "VirtualOEM",
+              "modelName": "VOEM-Electric05",
+              "bodyType": "Sedan",
+              "colorText": "Silver Metallic",
+              "colorCode": "VC01",
+              "vehicleConfiguration": [
+                "STATIC"
+              ],
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "identifier": {
+      "value": "V1RTUALV1N0000003",
+      "type": "VIN"
+    },
+    "response": {
+      "dtc": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:04.971656446Z",
+          "value": [
+            {
+              "dtcs": [],
+              "seatingCapacity": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "geolocation": {
+        "dataPoint": {
+          "geoSystem": "WGS84",
+          "latitude": 49.44117,
+          "timestamp": "2020-06-17T15:08:04.971644137Z",
+          "longitude": 8.54031
+        }
+      },
+      "checkControlMessages": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:05.016320122Z",
+          "value": [
+            {
+              "seatingCapacity": 0,
+              "status": "UNKNOWN",
+              "message": "Drive Battery Alert",
+              "value": 400
+            }
+          ]
+        }
+      },
+      "basicVehicleData": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:05.01870883Z",
+          "value": [
+            {
+              "vehicleSoftware": "VOS Rev1#c6c2d6ce566c3a6be013fe4ae24a8da636090876",
+              "seatingCapacity": 5,
+              "productionDate": "2020-01-21",
+              "registrationFirstDate": "2020-02-17",
+              "registrationCountry": "DE",
+              "brandName": "VirtualOEM",
+              "modelName": "B01",
+              "bodyType": "Sedan",
+              "colorText": "Silver Metallic",
+              "colorCode": "XX01",
+              "vehicleConfiguration": [
+                "EC1",
+                "DC21",
+                "OE51"
+              ],
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "identifier": {
+      "value": "V1RTUALV1N0000S06",
+      "type": "VIN"
+    },
+    "response": {
+      "dtc": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:04.971656446Z",
+          "value": [
+            {
+              "dtcs": [],
+              "seatingCapacity": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "geolocation": {
+        "error": {
+          "code": "car.502.4",
+          "message": "Data-point not available."
+        }
+      },
+      "checkControlMessages": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:07:49.379116216Z",
+          "value": [
+            {
+              "seatingCapacity": 0,
+              "status": "CRITICAL",
+              "message": "Brake Pad Alert",
+              "value": 123
+            }
+          ]
+        }
+      },
+      "basicVehicleData": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:07:49.379114116Z",
+          "value": [
+            {
+              "vehicleSoftware": "VOS Rev2Static10.06.2020",
+              "seatingCapacity": 5,
+              "productionDate": "2020-06-10",
+              "registrationFirstDate": "2020-06-10",
+              "registrationCountry": "DE",
+              "brandName": "VirtualOEM",
+              "modelName": "VOEM-Electric06",
+              "bodyType": "Sedan",
+              "colorText": "Silver Metallic",
+              "colorCode": "VC01",
+              "vehicleConfiguration": [
+                "STATIC"
+              ],
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "identifier": {
+      "value": "V1RTUALV1N0000002",
+      "type": "VIN"
+    },
+    "response": {
+      "dtc": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:04.971656446Z",
+          "value": [
+            {
+              "dtcs": [],
+              "seatingCapacity": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "geolocation": {
+        "dataPoint": {
+          "geoSystem": "WGS84",
+          "latitude": 49.09768,
+          "timestamp": "2020-06-17T14:37:09.756773135Z",
+          "longitude": 8.5371
+        }
+      },
+      "checkControlMessages": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T14:37:09.797862077Z",
+          "value": [
+            {
+              "seatingCapacity": 0,
+              "status": "UNKNOWN",
+              "message": "Drive Battery Alert",
+              "value": 400
+            }
+          ]
+        }
+      },
+      "basicVehicleData": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T14:37:09.800344089Z",
+          "value": [
+            {
+              "vehicleSoftware": "VOS Rev1#c6c2d6ce566c3a6be013fe4ae24a8da636090876",
+              "seatingCapacity": 5,
+              "productionDate": "2020-02-22",
+              "registrationFirstDate": "2020-03-17",
+              "registrationCountry": "DE",
+              "brandName": "VirtualOEM",
+              "modelName": "B02",
+              "bodyType": "Sedan",
+              "colorText": "Silver Metallic Bis",
+              "colorCode": "XX02",
+              "vehicleConfiguration": [
+                "EC2",
+                "DC22",
+                "OE51"
+              ],
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "identifier": {
+      "value": "V1RTUALV1N0000001",
+      "type": "VIN"
+    },
+    "response": {
+      "dtc": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:04.971656446Z",
+          "value": [
+            {
+              "dtcs": [],
+              "seatingCapacity": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "geolocation": {
+        "dataPoint": {
+          "geoSystem": "WGS84",
+          "latitude": 49.44117,
+          "timestamp": "2020-06-17T15:08:04.971654912Z",
+          "longitude": 8.54031
+        }
+      },
+      "checkControlMessages": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:05.016858118Z",
+          "value": [
+            {
+              "seatingCapacity": 0,
+              "status": "CRITICAL",
+              "message": "Brake Pad Alert",
+              "value": 200
+            }
+          ]
+        }
+      },
+      "basicVehicleData": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:05.019293215Z",
+          "value": [
+            {
+              "vehicleSoftware": "VOS Rev1#c6c2d6ce566c3a6be013fe4ae24a8da636090876",
+              "seatingCapacity": 5,
+              "productionDate": "2020-01-21",
+              "registrationFirstDate": "2020-02-17",
+              "registrationCountry": "DE",
+              "brandName": "VirtualOEM",
+              "modelName": "B01",
+              "bodyType": "Sedan",
+              "colorText": "Silver Metallic",
+              "colorCode": "XX01",
+              "vehicleConfiguration": [
+                "EC1",
+                "DC21",
+                "OE51"
+              ],
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "identifier": {
+      "value": "V1RTUALV1N0000S07",
+      "type": "VIN"
+    },
+    "response": {
+      "dtc": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:19.485533101Z",
+          "value": [
+            {
+              "dtcs": [],
+              "seatingCapacity": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "geolocation": {
+        "dataPoint": {
+          "geoSystem": "WGS84",
+          "latitude": 49.432308,
+          "timestamp": "2020-06-17T15:08:19.382095757Z",
+          "longitude": 8.546734
+        }
+      },
+      "checkControlMessages": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:19.382098672Z",
+          "value": [
+            {
+              "seatingCapacity": 0,
+              "status": "CRITICAL",
+              "message": "The airbags or belt tensioning systems are faulty or the passenger airbags are deactivated.",
+              "value": 42
+            }
+          ]
+        }
+      },
+      "basicVehicleData": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:19.382101775Z",
+          "value": [
+            {
+              "vehicleSoftware": "VOS Rev2Static10.06.2020",
+              "seatingCapacity": 5,
+              "productionDate": "2020-06-10",
+              "registrationFirstDate": "2020-06-10",
+              "registrationCountry": "DE",
+              "brandName": "VirtualOEM",
+              "modelName": "VOEM-Electric07",
+              "bodyType": "Sedan",
+              "colorText": "Silver Metallic",
+              "colorCode": "VC01",
+              "vehicleConfiguration": [
+                "STATIC"
+              ],
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "identifier": {
+      "value": "V1RTUALV1N0000S08",
+      "type": "VIN"
+    },
+    "response": {
+      "dtc": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:19.485533101Z",
+          "value": [
+            {
+              "dtcs": [],
+              "seatingCapacity": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "geolocation": {
+        "dataPoint": {
+          "geoSystem": "WGS84",
+          "latitude": 49.432249,
+          "timestamp": "2020-06-17T15:08:19.482468724Z",
+          "longitude": 8.547276
+        }
+      },
+      "checkControlMessages": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:19.482450053Z",
+          "value": [
+            {
+              "seatingCapacity": 0,
+              "status": "CRITICAL",
+              "message": "Please refuel. There are about 2.6 gallons of fuel left in the tank.",
+              "value": 10
+            }
+          ]
+        }
+      },
+      "basicVehicleData": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:19.482467212Z",
+          "value": [
+            {
+              "vehicleSoftware": "VOS Rev2Static09.06.2020",
+              "seatingCapacity": 5,
+              "productionDate": "2020-06-09",
+              "registrationFirstDate": "2020-06-09",
+              "registrationCountry": "DE",
+              "brandName": "VirtualOEM",
+              "modelName": "VOEM-Q8",
+              "bodyType": "Sedan",
+              "colorText": "Silver Metallic",
+              "colorCode": "VC01",
+              "vehicleConfiguration": [
+                "STATIC"
+              ],
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "identifier": {
+      "value": "V1RTUALV1N0000S09",
+      "type": "VIN"
+    },
+    "response": {
+      "dtc": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:19.485533101Z",
+          "value": [
+            {
+              "dtcs": [],
+              "seatingCapacity": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "geolocation": {
+        "dataPoint": {
+          "geoSystem": "WGS84",
+          "latitude": 49.0585,
+          "timestamp": "2020-06-17T15:08:19.485532364Z",
+          "longitude": 8.50016
+        }
+      },
+      "checkControlMessages": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:19.485535695Z",
+          "value": [
+            {
+              "seatingCapacity": 0,
+              "status": "CRITICAL",
+              "message": "Brake Pad Alert",
+              "value": 123
+            }
+          ]
+        }
+      },
+      "basicVehicleData": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:19.485535825Z",
+          "value": [
+            {
+              "vehicleSoftware": "VOS Rev2Static09.06.2020",
+              "seatingCapacity": 5,
+              "productionDate": "2020-06-09",
+              "registrationFirstDate": "2020-06-09",
+              "registrationCountry": "DE",
+              "brandName": "VirtualOEM",
+              "modelName": "VOEM-LongDrive",
+              "bodyType": "Sedan",
+              "colorText": "Silver Metallic",
+              "colorCode": "VC01",
+              "vehicleConfiguration": [
+                "STATIC"
+              ],
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "identifier": {
+      "value": "V1RTUALV1N0000S10",
+      "type": "VIN"
+    },
+    "response": {
+      "dtc": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:19.485533101Z",
+          "value": [
+            {
+              "dtcs": [],
+              "seatingCapacity": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "geolocation": {
+        "dataPoint": {
+          "geoSystem": "WGS84",
+          "latitude": 49.15525,
+          "timestamp": "2020-06-17T15:08:19.585874549Z",
+          "longitude": 8.56462
+        }
+      },
+      "checkControlMessages": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:19.585870241Z",
+          "value": [
+            {
+              "seatingCapacity": 0,
+              "status": "CRITICAL",
+              "message": "Brake Pad Alert",
+              "value": 123
+            }
+          ]
+        }
+      },
+      "basicVehicleData": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:19.585868382Z",
+          "value": [
+            {
+              "vehicleSoftware": "VOS Rev2Static09.06.2020",
+              "seatingCapacity": 5,
+              "productionDate": "2020-06-09",
+              "registrationFirstDate": "2020-06-09",
+              "registrationCountry": "DE",
+              "brandName": "VirtualOEM",
+              "modelName": "VOEM-LongDrive",
+              "bodyType": "Sedan",
+              "colorText": "Silver Metallic",
+              "colorCode": "VC01",
+              "vehicleConfiguration": [
+                "STATIC"
+              ],
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "identifier": {
+      "value": "V1RTUALV1N0000S11",
+      "type": "VIN"
+    },
+    "response": {
+      "dtc": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:19.485533101Z",
+          "value": [
+            {
+              "dtcs": [],
+              "seatingCapacity": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "geolocation": {
+        "dataPoint": {
+          "geoSystem": "WGS84",
+          "latitude": 49.17106,
+          "timestamp": "2020-06-17T15:08:19.588862527Z",
+          "longitude": 8.57397
+        }
+      },
+      "checkControlMessages": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:19.588854563Z",
+          "value": [
+            {
+              "seatingCapacity": 0,
+              "status": "CRITICAL",
+              "message": "Brake Pad Alert",
+              "value": 123
+            }
+          ]
+        }
+      },
+      "basicVehicleData": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:19.588858251Z",
+          "value": [
+            {
+              "vehicleSoftware": "VOS Rev2Static09.06.2020",
+              "seatingCapacity": 5,
+              "productionDate": "2020-06-09",
+              "registrationFirstDate": "2020-06-09",
+              "registrationCountry": "DE",
+              "brandName": "VirtualOEM",
+              "modelName": "VOEM-LongDrive",
+              "bodyType": "Sedan",
+              "colorText": "Silver Metallic",
+              "colorCode": "VC01",
+              "vehicleConfiguration": [
+                "STATIC"
+              ],
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "identifier": {
+      "value": "V1RTUALV1N0000S12",
+      "type": "VIN"
+    },
+    "response": {
+      "dtc": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:19.485533101Z",
+          "value": [
+            {
+              "dtcs": [],
+              "seatingCapacity": 0,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "geolocation": {
+        "dataPoint": {
+          "geoSystem": "WGS84",
+          "latitude": 49.11332,
+          "timestamp": "2020-06-17T15:08:19.689169728Z",
+          "longitude": 8.54942
+        }
+      },
+      "checkControlMessages": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:19.689163028Z",
+          "value": [
+            {
+              "seatingCapacity": 0,
+              "status": "CRITICAL",
+              "message": "Brake Pad Alert",
+              "value": 123
+            }
+          ]
+        }
+      },
+      "basicVehicleData": {
+        "dataPoint": {
+          "timestamp": "2020-06-17T15:08:19.689170485Z",
+          "value": [
+            {
+              "vehicleSoftware": "VOS Rev2Static09.06.2020",
+              "seatingCapacity": 5,
+              "productionDate": "2020-06-09",
+              "registrationFirstDate": "2020-06-09",
+              "registrationCountry": "DE",
+              "brandName": "VirtualOEM",
+              "modelName": "VOEM-LongDrive",
+              "bodyType": "Sedan",
+              "colorText": "Silver Metallic",
+              "colorCode": "VC01",
+              "vehicleConfiguration": [
+                "STATIC"
+              ],
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  }
+]

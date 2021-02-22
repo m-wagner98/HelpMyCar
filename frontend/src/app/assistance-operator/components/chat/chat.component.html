@@ -1,0 +1,30 @@
+<div class="header pointer" (click)="expand()">
+  <div *ngIf="!expanded" [matBadge]="nrOfNewMessages[id] || null" id="badge" matBadgePosition="before"></div>
+  <mat-icon [ngClass]="arrowClass" id="arrow-icon">keyboard_arrow_up</mat-icon>
+  <img alt="CHAT_ICON" src="assets/chat_icon.svg"/>
+  <p>{{helpRequest?.driver?.firstName}} <span class="lastName">{{helpRequest?.driver?.lastName}}</span></p>
+</div>
+
+<div id="slide-up-wrapper" [ngClass]="slideUpClass">
+  <div #scrollMe (scroll)="onScroll()" id="chat-box">
+    <ng-container *ngFor="let message of messages; let last = last">
+      <mat-card id="message" *ngIf=" message.sender === helpRequest.driver.user ||
+                    message.receiver === helpRequest.driver.user"
+                [ngClass]="message.sender === 'AssistanceOperator' ? 'sent-message' : 'received-message'">
+        <mat-card-content class="cardContent">{{message.message}}</mat-card-content>
+      </mat-card>
+    </ng-container>
+  </div>
+
+  <div id="footer">
+    <mat-form-field (keydown.enter)="onEnterDown($event)" (keyup.enter)="onSendButton()" appearance="none" id="textBox">
+      <label>
+        <textarea #autosize="cdkTextareaAutosize" [(ngModel)]="typedMessage" cdkAutosizeMaxRows="5"
+                  cdkAutosizeMinRows="1" cdkTextareaAutosize matInput></textarea>
+      </label>
+    </mat-form-field>
+    <div id="send-wrapper">
+      <mat-icon (click)="onSendButton()" class="pointer" id="send-icon" matSuffix>send</mat-icon>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,74 @@
+@import "../../../shared/styles/colors.scss", "../../../shared/styles/mixins.scss";
+
+mat-form-field {
+  display: flex;
+  justify-content: center;
+}
+
+.mat-dialog-content {
+  overflow: visible;
+}
+
+#dropdown-top {
+  display: flex;
+  border-radius: 10px;
+  background: $grey;
+  color: $white-font;
+}
+
+#dropdown-menu {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+.arrow-icon {
+  align-self: center;
+  margin-left: auto;
+  margin-right: 12px;
+  transition: transform 400ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+}
+
+.dropdown-open {
+  border-radius: 10px 10px 0 0 !important;
+}
+
+.delay-400ms {
+  transition: border-radius 100ms;
+  transition-delay: 300ms;
+}
+
+#dropdown-card {
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+  transition: all 400ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  max-height: 0;
+}
+
+.dropdown-button {
+  text-align: left;
+  padding: 0.5em 1em;
+  margin: 0;
+  border: none;
+}
+
+.dropdown-text {
+  border-radius: 0;
+  width: 100%;
+
+  &:hover {
+    box-shadow: inset 0 0 5px gray;
+  }
+}
+
+.grow-bottom {
+  max-height: 74px !important;
+}
+
+.last-dropdown-item {
+  border-radius: 0 0 10px 10px;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}

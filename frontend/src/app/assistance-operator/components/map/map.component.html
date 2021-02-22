@@ -1,0 +1,19 @@
+<agm-map #agmMap [fitBounds]="true" [latitude]="driverLat" [longitude]="driverLng" [streetViewControl]="false"
+  (mapReady)="onReady(agmMap)" [styles]="googleMapStyle">
+  <agm-marker *ngFor="let serviceVehicleMarker of serviceVehicleMarkers" 
+    [agmFitBounds]="serviceVehicleMarker.fitMapBounds"
+    [iconUrl]="serviceVehicleMarker.icon" 
+    [latitude]="serviceVehicleMarker.serviceVehicle.carData.geolocation.dataPoint.latitude" 
+    [longitude]="serviceVehicleMarker.serviceVehicle.carData.geolocation.dataPoint.longitude"
+    [visible]="serviceVehicleMarker.visible" 
+    (markerClick)="mapSelect(serviceVehicleMarker.serviceVehicle)">
+  </agm-marker>
+  <agm-marker 
+    [zIndex]="1000"
+    [agmFitBounds]="driverMapBounds" 
+    [iconUrl]="markerIconDriver" 
+    [latitude]="driverLat"
+    [longitude]="driverLng" 
+    (markerClick)="mapSelect(undefined)">
+  </agm-marker>
+</agm-map>

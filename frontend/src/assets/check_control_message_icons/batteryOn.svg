@@ -1,0 +1,14 @@
+<svg data-name="Ebene 1" id="e1caf5a1-b682-4ebe-88fb-39912c72a092" viewBox="0 0 51.71 38.68"
+     xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>.f6860d6a-a1d0-4535-a3a2-28ed382e4a68 {
+      fill: #ec6252;
+    }</style>
+  </defs>
+  <rect class="f6860d6a-a1d0-4535-a3a2-28ed382e4a68" height="3.23" width="8.63" x="6.59" y="10.83"/>
+  <path class="f6860d6a-a1d0-4535-a3a2-28ed382e4a68"
+        d="M49.41,13V10.06H40.78V13H19.5V10.06H10.87V13H4.28V48.74H56V13ZM52.68,45.7H7.51V16.19H52.68Z"
+        transform="translate(-4.28 -10.06)"/>
+  <polygon class="f6860d6a-a1d0-4535-a3a2-28ed382e4a68"
+           points="45.09 10.83 42.46 10.83 42.46 8.13 39.23 8.13 39.23 10.83 36.46 10.83 36.46 14.06 39.23 14.06 39.23 16.76 42.46 16.76 42.46 14.06 45.09 14.06 45.09 10.83"/>
+</svg>

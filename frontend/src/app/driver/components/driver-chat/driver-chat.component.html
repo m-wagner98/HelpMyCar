@@ -1,0 +1,20 @@
+<div id="siteWrapper">
+  <div #scrollMe (scroll)="onScroll()" id="messageWrapper">
+    <mat-card #messageContent *ngFor="let message of messages"
+              [ngClass]="message.receiver === 'AssistanceOperator' ? 'sent-message' : 'received-message'">
+      <mat-card-content class="cardContent">{{message.message}}</mat-card-content>
+    </mat-card>
+  </div>
+  <div id="textbox-wrapper">
+    <mat-form-field (keydown.enter)="onEnterDown($event)" (keyup.enter)="onSendButton()" appearance="none"
+                    id="textBox">
+      <label>
+        <textarea #autosize="cdkTextareaAutosize" [(ngModel)]="typedMessage" cdkAutosizeMaxRows="5"
+                  cdkAutosizeMinRows="1" cdkTextareaAutosize matInput></textarea>
+      </label>
+    </mat-form-field>
+    <div id="send-wrapper">
+      <mat-icon (click)="onSendButton()" class="pointer" id="send-icon" matSuffix>send</mat-icon>
+    </div>
+  </div>
+</div>

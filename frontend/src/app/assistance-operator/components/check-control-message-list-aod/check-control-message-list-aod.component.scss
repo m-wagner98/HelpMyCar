@@ -1,0 +1,25 @@
+@import "../../../shared/styles/colors.scss";
+
+mat-card {
+  background: $lightgrey;
+  color: $white-font;
+  margin-top: 1em;
+  border-radius: 20px;
+  padding: 12px 20px;
+}
+
+.icon {
+  width: 2em;
+  margin: 0 1em 1em 1em!important;
+}
+
+::ng-deep .description .tooltip-inner {
+  background-color: #676767;
+  color: #FBFBFB;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+::ng-deep .description .arrow::before {
+  border-bottom-color: #676767;
+}

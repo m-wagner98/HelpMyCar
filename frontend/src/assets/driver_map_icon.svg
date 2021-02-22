@@ -1,0 +1,23 @@
+<svg data-name="Ebene 1" id="fb4129db-5ee7-4201-b15c-1df632946ccb" viewBox="0 0 33.88 48.22"
+     xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>.edc5de8b-ae0e-4394-a559-0e11afb931f2 {
+      fill: #2c2b3b;
+      stroke: #fff;
+    }
+
+    .ffe79fc1-5a64-4dcb-9719-51c2e4a67560 {
+      fill: #ec6252;
+    }</style>
+  </defs>
+  <g data-name="Gruppe 161" id="eed2c8ae-d7a4-4533-9e29-eecefa595266">
+    <path class="edc5de8b-ae0e-4394-a559-0e11afb931f2"
+          d="M31.86,9.38A16.43,16.43,0,0,0,15.41,25.8v0c0,12.33,16.45,30.54,16.45,30.54S48.3,38.16,48.3,25.82A16.43,16.43,0,0,0,31.88,9.38Z"
+          data-name="ic place 24px" id="e54f1300-92cf-41bd-9f28-2154614222db" transform="translate(-14.91 -8.88)"/>
+    <path class="ffe79fc1-5a64-4dcb-9719-51c2e4a67560"
+          d="M31.64,16.58h0a1.62,1.62,0,0,1,1.61,1.62V35.94a1.61,1.61,0,0,1-1.61,1.62h0A1.62,1.62,0,0,1,30,35.94V18.2A1.63,1.63,0,0,1,31.64,16.58Z"
+          data-name="Rechteck 218" id="a66515b0-db33-4bf3-b48a-1701e6df80a2" transform="translate(-14.91 -8.88)"/>
+    <circle class="ffe79fc1-5a64-4dcb-9719-51c2e4a67560" cx="16.74" cy="32.84" data-name="Ellipse 174"
+            id="b00e3e4b-709d-4d9c-ac88-d119910d312b" r="2.03"/>
+  </g>
+</svg>

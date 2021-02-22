@@ -1,0 +1,114 @@
+@import "../../../shared/styles/mixins.scss", "../../../shared/styles/colors.scss", "../../../shared/styles/fonts.scss";
+
+#help-request {
+  width: 90%;
+  background: #FFFFFF4D;
+  color: $white-font;
+  border: 2px solid $white-font;
+  border-radius: 45px;
+}
+
+.outer-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#help-request-wrapper {
+  margin-top: auto;
+  margin-bottom: 4em;
+}
+
+.mat-raised-button {
+  line-height: 4em;
+}
+
+#preview {
+  width: 100%;
+  margin-top: 5%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  font-size: larger;
+}
+
+#carousel-controls {
+  text-align: center;
+
+  .selected {
+    color: $white-font;
+  }
+
+  mat-icon {
+    color: $icon-grey;
+    @include iconSize(12px);
+    padding: 9px;
+  }
+}
+
+#carousel {
+  display: flex;
+  overflow-x: hidden;
+  width: calc(100% + 3em);
+  margin: 0 auto 0 -1.5em;
+  height: 20.375em;
+
+
+  mat-card {
+    width: 70%;
+    margin-left: 6%;
+    background: $darkgrey;
+    flex-shrink: 0;
+    position: relative;
+    transition: left .4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+
+    p {
+      font: $light-manrope;
+      color: $white-font;
+      flex: 1;
+      display: table;
+      margin: auto;
+      text-align: center;
+    }
+
+    #lightning {
+      fill: #E06039;
+      width: 12%;
+      height: 12%;
+      margin-top: 1em;
+    }
+  }
+
+  & :nth-child(1) {
+    margin-left: 15%;
+  }
+}
+
+#carousel-links {
+  & > a {
+    display: inline-block;
+    margin: 0.3125em;
+  }
+}
+
+.check-control-signs {
+  color: $red;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+
+  .check-control-sign-icon {
+    width: 35px;
+    padding-right: 0.5em;
+    margin: 0!important;
+
+  }
+}
+
+.car-visualization {
+  height: 8em;
+}
+

@@ -1,0 +1,15 @@
+<h2 mat-dialog-title>Confirm Service Vehicle</h2>
+<div mat-dialog-content>
+  <p>Do you want to send this service vehicle to the customer
+    and provide it with the following data?</p>
+  <ul>
+    <li>Diagnostic Trouble Codes</li>
+    <li>Warning Lights</li>
+    <li>Customer Data</li>
+  </ul>
+</div>
+<div class="button-wrapper" mat-dialog-actions>
+  <button (click)="confirmServiceVehicle()" mat-raised-button>Send Vehicle</button>
+  <button (click)="close()" mat-raised-button>Cancel</button>
+</div>
+

@@ -1,0 +1,23 @@
+<div id="status-open" class="circle-container">
+  <mat-icon (click)="onRingClicked(0)" class="circle pointer" [ngbTooltip]="'open'" placement = "right" tooltipClass="description">stop</mat-icon>
+  <mat-icon [ngClass]="{'ringAn': showRing[0]}">check_box_outline_blank</mat-icon>
+  
+</div>
+
+<div id="in-progress" class="circle-container">
+  <mat-icon (click)="onRingClicked(1)" class="circle pointer" [ngbTooltip]="'in progress'" tooltipClass="description">stop</mat-icon>
+  <mat-icon [ngClass]="{'ringAn': showRing[1]}">check_box_outline_blank</mat-icon>
+</div>
+
+<div id="service-vehicle-on-the-way" class="circle-container">
+  <mat-icon (click)="onRingClicked(2)" class="circle pointer" [ngbTooltip]="'service vehicle on the way'" tooltipClass="description">stop</mat-icon>
+  <mat-icon [ngClass]="{'ringAn': showRing[2]}">check_box_outline_blank</mat-icon>
+</div>
+
+<div id="closed" class="circle-container">
+  <mat-icon (click)="onRingClicked(3)" class="circle pointer" [ngbTooltip]="'closed'" tooltipClass="description">stop</mat-icon>
+  <mat-icon [ngClass]="{'ringAn': showRing[3]}">check_box_outline_blank</mat-icon>
+</div>
+
+
+<!-- <div id="filter-description" #description></div> unfinished tooltip -->

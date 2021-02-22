@@ -1,0 +1,14 @@
+<button [disableRipple]="true" mat-raised-button>
+  <div class="content">
+    <div class="img-wrapper">
+      <img alt="{{imgALT}}" src="{{imgSRC}}" width="90px">
+    </div>
+    <div class="details">
+      <p>{{serviceVehicle?.vin}}</p>
+      <p *ngIf="serviceVehicle?.type === 'TOWING_VEHICLE'">Towing Vehicle</p>
+      <p *ngIf="serviceVehicle?.type === 'ON_SITE_VEHICLE'">On-site Vehicle</p>
+      <p>Distance: {{serviceVehicle?.distance}} km</p>
+    </div>
+    <button (click)="openConfirmServiceVehicleDialog()" id="send" mat-raised-button>send</button>
+  </div>
+</button>

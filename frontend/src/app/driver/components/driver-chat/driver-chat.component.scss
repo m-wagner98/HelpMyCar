@@ -1,0 +1,90 @@
+@import "../../../shared/styles/colors.scss";
+
+#siteWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  position: relative;
+  left: -1.5em;
+  top: -1.5em;
+  width: calc(100% + 3em);
+  height: calc(100% + 3em);
+}
+
+#messageWrapper {
+  overflow-y: scroll;
+}
+
+mat-card {
+  max-width: 65%;
+  margin-bottom: 1em;
+  word-break: break-word;
+  border-radius: 10px;
+  color: white;
+}
+
+.sent-message {
+  background-color: $lightgrey;
+  box-shadow: 0 3px 6px #00000029;
+  margin-right: .5em;
+  margin-left: auto;
+}
+
+.received-message {
+  background-color: $lightgrey;
+  box-shadow: 0 3px 6px #00000029;
+  margin-left: .5em;
+  margin-right: auto;
+}
+
+
+#send-wrapper {
+  margin: 0.2em 0.4em 0 0.4em;
+  position: relative;
+  background: white;
+  z-index: auto;
+  border-radius: 25px;
+  height: 80%;
+  width: 12%;
+
+  #send-icon {
+    position: relative;
+    top: 5px;
+    color: black;
+    font-size: 24px;
+    padding-left: 8px;
+  }
+}
+
+#textbox-wrapper {
+  display: flex;
+  background: $lightgrey;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 8%;
+  padding: 9px 15px 9px 20px;
+  justify-content: center;
+  margin-bottom: 14px;
+
+  mat-form-field {
+    width: 100%;
+  }
+
+  label {
+    width: 95%;
+  }
+
+  textarea {
+    box-sizing: initial;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    border-radius: 10px;
+    height: 1em !important;
+    color: black;
+    padding: 5px !important;
+    margin-top: 2px;
+  }
+
+}
+
+

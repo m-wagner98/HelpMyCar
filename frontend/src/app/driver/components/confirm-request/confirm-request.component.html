@@ -1,0 +1,23 @@
+<div mat-dialog-content id="request">
+  <p>Do you require Roadside Assistance for this car?</p>
+  <div id="dropdown-menu" [style.cursor]="vinList.length > 1 ? 'pointer' : 'default'">
+    <div (click)="vinList.length > 1 ? dropdownOpen = !dropdownOpen : null"
+         [ngClass]="{'dropdown-open': dropdownOpen, 'delay-400ms': !dropdownOpen}"
+         id="dropdown-top">
+      <p id="dropdown-toggle" class="dropdown-button">{{selectedVin}}</p>
+      <mat-icon *ngIf="vinList.length > 1" [ngClass]="{'rotate': dropdownOpen}" class="arrow-icon pointer">
+        keyboard_arrow_down
+      </mat-icon>
+    </div>
+    <div [ngClass]="{'grow-bottom': dropdownOpen}" id="dropdown-card">
+      <button class="dropdown-button dropdown-text" *ngFor="let vin of filterSelectedVin(vinList); let last = last"
+              (click)="setSelectedVin(vin)" [ngClass]="{'last-dropdown-item': last}">{{vin}}</button>
+    </div>
+  </div>
+  <p>Help will be send to this location:<br>
+    {{vehicleInfo?.inVehicleData[getDataPositionInVehicleInfoList()] | reverseGeocode | async}}</p>
+</div>
+<div mat-dialog-actions class="button-wrapper">
+  <button (click)="confirmRequest()" mat-raised-button>Accept</button>
+  <button (click)="close()" mat-raised-button>Cancel</button>
+</div>

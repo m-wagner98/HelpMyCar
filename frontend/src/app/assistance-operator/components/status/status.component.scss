@@ -1,0 +1,82 @@
+@import "../../../shared/styles/mixins.scss", "../../../shared/styles/colors.scss", "../../../shared/styles/fonts.scss";
+
+$marginBetween: 0.7em;
+
+.icon {
+  flex: 0 1 auto;
+  @include iconSize(3.125em);
+}
+
+.progress-wrapper {
+  display: flex;
+  align-items: center;
+
+
+  .circle {
+    @include iconSize(1.125em);
+    color: $lightgrey;
+    margin: 0 0 0 $marginBetween;
+  }
+
+  .line {
+    color: $lightgrey;
+    @include iconSize(1.25em);
+    margin: 0 $marginBetween;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+  }
+
+
+  p {
+    margin: 10px $marginBetween;
+    color: $lightgrey;
+    font-size: 13px;
+  }
+
+  #status-open {
+    color: $lightblue;
+  }
+
+  #in-progress {
+    color: $turquoise;
+  }
+
+  #service-vehicle-on-the-way {
+    color: $neon-green;
+  }
+
+  #closed {
+    color: $lightgrey;
+  }
+}
+
+.highlighted {
+  font-weight: bolder;
+
+  p {
+    font: $bold-manrope;
+    color: $lightgrey-text;
+  }
+
+  .circle {
+    color: unset;
+  }
+}
+
+.already-selected {
+  p {
+    // font: $light-manrope;
+    color: $lightgrey-text;
+  }
+
+  .line {
+    color: $lightgrey-text;
+  }
+
+  .circle {
+    color: unset;
+  }
+}

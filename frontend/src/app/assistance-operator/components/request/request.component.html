@@ -1,0 +1,16 @@
+<div id="request">
+  <div [ngStyle]="{'background-color': helpRequest.status| statusColor}" class="status-color-bar"></div>
+  <div class="content-wrapper">
+    <img [src]="getIcon()" alt="car-icon" class="car-icon">
+    <div class="text font-light-manrope">
+      {{helpRequest?.driver?.firstName}} <span
+      class="font-extrabold-manrope">{{helpRequest?.driver?.lastName}}</span><br>
+      {{helpRequest?.apiResponse?.inVehicleData[0]?.identifier?.value}}<br>
+      <span
+        class="font-extrabold-manrope">{{helpRequest.apiResponse.inVehicleData[0]?.response.basicVehicleData.dataPoint.value[0].brandName}}</span>
+      , {{helpRequest.apiResponse.inVehicleData[0]?.response.basicVehicleData.dataPoint.value[0].modelName}}
+      <span class="past-time font-extrabold-manrope">{{helpRequest.createdAt}} min ago</span>
+    </div>
+  </div>
+</div>
+

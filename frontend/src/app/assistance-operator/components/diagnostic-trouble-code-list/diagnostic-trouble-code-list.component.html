@@ -1,0 +1,20 @@
+<mat-expansion-panel [hideToggle]="true" [expanded]="isPanelOpen" [disabled]="true">
+  <mat-expansion-panel-header [collapsedHeight]="'20%'" [expandedHeight]="'40%'">
+    <mat-panel-title>
+      <h2>Trouble Codes</h2>
+      <ng-container *ngFor="let troubleCode of troubleCodes | slice:0:2">
+        <app-diagnostic-trouble-code [troubleCode]='troubleCode'>
+        </app-diagnostic-trouble-code>
+      </ng-container>
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <ng-container *ngFor="let troubleCode of troubleCodes | slice:2">
+    <app-diagnostic-trouble-code *ngIf="troubleCodes" [troubleCode]='troubleCode'>
+    </app-diagnostic-trouble-code>
+  </ng-container>
+</mat-expansion-panel>
+
+<div id="down-wrapper" *ngIf="troubleCodes.length >= 3">
+  <mat-icon (click)="togglePanel()" [ngClass]="arrowClass" class="pointer" id="toggle-arrow">keyboard_arrow_down
+  </mat-icon>
+</div>

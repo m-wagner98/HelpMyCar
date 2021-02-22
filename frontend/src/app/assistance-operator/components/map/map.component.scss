@@ -1,0 +1,35 @@
+@import "src/app/shared/styles/colors", "src/app/shared/styles/fonts";
+
+agm-map {
+  height: 100%;
+}
+
+::ng-deep .agm-map-container-inner {
+  border-radius: 20px;
+}
+
+table {
+  margin-top: 1em;
+  color: white;
+}
+
+td {
+  padding-right: 10px;
+}
+
+.first-word {
+  font-weight: bold;
+}
+
+h2 {
+  padding-bottom: 0;
+}
+
+::ng-deep .gm-style .gm-style-iw {
+  background-color: $semi-dark-grey;
+}
+
+::ng-deep .gm-style-cc {
+  height: 20px !important;
+}
+

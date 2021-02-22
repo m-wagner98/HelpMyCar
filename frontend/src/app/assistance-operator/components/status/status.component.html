@@ -1,0 +1,26 @@
+<div class="progress-wrapper">
+
+  <div [ngClass]="{'highlighted': isHighlighted[0], 'already-selected': isAlreadySelected[0]}" id="status-open">
+    <mat-icon class="circle">fiber_manual_record</mat-icon>
+    <p> Open</p>
+  </div>
+
+  <div [ngClass]="{'highlighted': isHighlighted[1], 'already-selected': isAlreadySelected[1]}" id="in-progress">
+    <mat-icon class="line">remove</mat-icon>
+    <mat-icon class="circle">fiber_manual_record</mat-icon>
+    <p> In progress</p>
+  </div>
+
+  <div [ngClass]="{'highlighted': isHighlighted[2], 'already-selected': isAlreadySelected[2]}"
+       id="service-vehicle-on-the-way">
+    <mat-icon class="line">remove</mat-icon>
+    <mat-icon class="circle">fiber_manual_record</mat-icon>
+    <p> Service Vehicle on the way</p>
+  </div>
+
+  <div [ngClass]="{'highlighted': isHighlighted[3], 'already-selected': isAlreadySelected[3]}" id="closed">
+    <mat-icon class="line">remove</mat-icon>
+    <mat-icon class="circle">fiber_manual_record</mat-icon>
+    <p> Closed</p>
+  </div>
+</div>

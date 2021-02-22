@@ -1,0 +1,52 @@
+.display-unset {
+  display: unset !important;
+}
+
+// svg styling
+.st0 {
+  fill: #2C2B3B;
+  stroke: #FFFFFF;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  pointer-events: none;
+}
+
+.st1 {
+  fill: #FF624D80;
+  stroke: #FF624D;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  display: none;
+}
+
+.st3 {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 1px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  pointer-events: none;
+}
+
+.st4 {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 1px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  pointer-events: none;
+}
+
+.st0, .st1, .st3, .st4 {
+  transform: translate(-360px, -260px);
+}
+
+svg {
+  width: 100%;
+}

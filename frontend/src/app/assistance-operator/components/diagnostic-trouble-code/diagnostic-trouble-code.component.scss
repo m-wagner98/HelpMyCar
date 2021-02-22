@@ -1,0 +1,21 @@
+@import "../../../shared/styles/colors.scss";
+
+p {
+  background-color: transparent;
+  color: $white-font;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 5px;
+
+  &:hover {
+    color: $red;
+  }
+}
+
+.box-shadow {
+  box-shadow: inset 0 0 5px gray;
+}
+
+.hover-effect {
+  color: $red;
+}

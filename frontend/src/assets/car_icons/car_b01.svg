@@ -1,0 +1,23 @@
+<svg data-name="Ebene 1" id="a017f5a7-5da9-4dfb-bd43-37aaebc2a08a" viewBox="0 0 61.07 24.06"
+     xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>.b9cdd586-4831-47db-b53f-96134859414d, .bc53beda-0a5f-412a-8333-3c021d582dee {
+      fill: none;
+      stroke: #fff;
+    }
+
+    .b9cdd586-4831-47db-b53f-96134859414d {
+      stroke-miterlimit: 10;
+    }
+
+    .bc53beda-0a5f-412a-8333-3c021d582dee {
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }</style>
+  </defs>
+  <circle class="b9cdd586-4831-47db-b53f-96134859414d" cx="13.46" cy="19.56" r="4"/>
+  <circle class="b9cdd586-4831-47db-b53f-96134859414d" cx="49.9" cy="19.56" r="4"/>
+  <path class="bc53beda-0a5f-412a-8333-3c021d582dee"
+        d="M61.79,35.09c-4.08-2.24-16.87-2.94-16.87-2.94L34.66,25.8a44.41,44.41,0,0,0-13.62,0C18,26.07,9.8,30.68,9.8,30.68L5,31a1.82,1.82,0,0,0-1.7,1c-.57,1.08-.54,5.16-.46,7.74s1.7,3,1.7,3l5.72,1.19a5.5,5.5,0,0,1,11,0l25.44,0a5.5,5.5,0,0,1,11,0h.16l4.44-.65C63.85,37.93,61.79,35.09,61.79,35.09Z"
+        transform="translate(-2.28 -24.8)"/>
+</svg>

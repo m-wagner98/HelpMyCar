@@ -1,0 +1,56 @@
+[
+  {
+    "vinList": [
+      "V1RTUALV1N0000003",
+      "V1RTUALV1N0000004",
+      "V1RTUALV1N0000S05"
+    ],
+    "user": "juliaBecker",
+    "firstName": "Julia",
+    "lastName": "Becker",
+    "customerNumber": 8976616657,
+    "entryDate": "2019-05-14",
+    "residence": "Mannheim",
+    "phoneNumber": "+49-155-5551-468",
+    "email": "julia.becker@gmail.com"
+  },
+  {
+    "vinList": [
+      "V1RTUALV1N0000S07"
+    ],
+    "user": "rickSanchez",
+    "firstName": "Rick",
+    "lastName": "Sanchez",
+    "customerNumber": 6269774720,
+    "entryDate": "2018-03-17",
+    "residence": "Berlin",
+    "phoneNumber": "+49-178-555-1207",
+    "email": "rick.sanchez@gmx.de"
+  },
+  {
+    "vinList": [
+      "V1RTUALV1N0000S06"
+    ],
+    "user": "michaelRoss",
+    "firstName": "Michael",
+    "lastName": "Ross",
+    "customerNumber": 7611053498,
+    "entryDate": "2020-01-10",
+    "residence": "Ludwigshafen",
+    "phoneNumber": "+49-162-555-4708",
+    "email": "mike.ross@gmail.com"
+  },
+  {
+    "vinList": [
+      "V1RTUALV1N0000002"
+    ],
+    "user": "marioKopper",
+    "firstName": "Mario",
+    "lastName": "Kopper",
+    "customerNumber": 3719280012,
+    "entryDate": "2020-01-17",
+    "residence": "Ludwigshafen",
+    "phoneNumber": "+49-162-521-3982",
+    "email": "mario.kopper@gmail.com"
+  }
+]

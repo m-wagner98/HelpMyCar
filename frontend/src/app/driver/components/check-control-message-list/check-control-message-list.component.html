@@ -1,0 +1,6 @@
+<div class="checkControlMessageList">
+  <ng-container *ngFor="let checkControlMessage of checkControlMessages">
+    <app-check-control-message *ngIf="checkControlMessages" [checkControlMessage]='checkControlMessage'>
+    </app-check-control-message>
+  </ng-container>
+</div>

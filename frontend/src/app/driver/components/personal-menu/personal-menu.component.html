@@ -1,0 +1,5 @@
+<mat-icon [matMenuTriggerFor]="personalMenu" class="pointer">account_circle</mat-icon>
+<mat-menu #personalMenu="matMenu" xPosition="before">
+  <button mat-menu-item routerLink="personal-data">Personal Data</button>
+  <button (click)="terminate()" mat-menu-item routerLink="login">Logout</button>
+</mat-menu>

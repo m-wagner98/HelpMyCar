@@ -1,0 +1,22 @@
+<div class="outer-wrapper">
+  <div id="carousel-controls" [style.visibility]="vinList?.length > 1 ? 'visible' : 'hidden'">
+    <mat-icon *ngFor="let vin of vinList; let i = index" (click)="setSelectedVin(vin)" class="pointer" [ngClass]="{'selected': isSelected[i]}">fiber_manual_record</mat-icon>
+  </div>
+  <div id="carousel" >
+    <mat-card *ngFor="let vin of vinList; let i = index" id="{{vin}}" class="pointer" [ngStyle]="{'left': '' + left + '%'}" (click)="setSelectedVin(vin)">
+      <p>{{vin}}<br>
+      {{vehicleInfo?.inVehicleData[i].response.basicVehicleData.dataPoint.value[0].brandName}} {{vehicleInfo?.inVehicleData[i].response.basicVehicleData.dataPoint.value[0].modelName}}</p>
+      <app-driver-car-visualization [vin]="vin"></app-driver-car-visualization>
+      <div class="check-control-signs">
+        <img *ngFor="let checkControlMessage of vehicleInfo?.inVehicleData[i].response.checkControlMessages?.dataPoint.value" 
+            alt="check control sign icon" class="check-control-sign-icon"
+            src="{{getCheckControlSignSvg(checkControlMessage.value)}}">
+      </div>
+      <p>{{vehicleInfo?.inVehicleData[i] | reverseGeocode | async}}</p>
+    </mat-card>
+  </div>
+
+  <div id="help-request-wrapper" class="button-wrapper">
+    <button (click)="openConfirmRequestDialog()" id="help-request" mat-raised-button>Send Help Request</button>
+  </div>
+</div>

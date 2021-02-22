@@ -1,0 +1,27 @@
+version: "3"
+services:
+  hmc-backend:
+    build:
+      context: backend
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "8087:8080"
+    networks:
+      - frontend
+  hmc-frontend:
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+    ports:
+       - "4200:80"
+    depends_on:
+      - hmc-backend
+    networks:
+      - frontend
+networks:
+  frontend:
+
+
+
+

@@ -1,0 +1,22 @@
+<div id="request-list-wrapper">
+  <div id="side">
+    <img (click)="showSearchbar = !showSearchbar" alt="search-icon" class="pointer search-icon"
+         src="assets/search_icon.svg">
+    <div id="search-wrapper">
+      <app-search (criteriaEvent)="setSearch($event)" id="search" [ngClass]="{'slide-in-left': showSearchbar}">
+      </app-search>
+    </div>
+    <app-filter (criteriaEvent)="setFilter($event)" id="filter"></app-filter>
+    <mat-icon (click)="openDialog()" class="resetIcon pointer">cancel</mat-icon>
+  </div>
+  <div id='help-request-list' [@listAnimation]='(helpRequests | filter: criteria)'>
+    <span class="font-extrabold-manrope">Requests</span>
+    <div class="list-wrapper">
+      <a *ngFor="let helpRequest of helpRequests | filter: criteria;" [routerLink]="['request', helpRequest.id]"
+         class='help-request pointer'>
+        <app-request (click)="onRequestSelected(helpRequest.id); selected = helpRequest" [helpRequest]='helpRequest'
+                     [ngClass]="{'selected' : selected === helpRequest}"></app-request>
+      </a>
+    </div>
+  </div>
+</div>

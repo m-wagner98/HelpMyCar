@@ -1,0 +1,5 @@
+<form class="search-form" [ngClass]="formClass">
+  <mat-form-field appearance="none" color="white">
+    <input autocomplete="off" #searchBox (input)="change(searchBox.value)" matInput placeholder="Search" type="text">
+  </mat-form-field>
+</form>

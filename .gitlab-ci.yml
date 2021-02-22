@@ -1,0 +1,80 @@
+variables:
+  WORK_DIR: ./
+  DOCKER_IMAGE_FRONT: $CI_REGISTRY/student-project-sep-hs-mannheim/greenbox-collective/frontend
+  DOCKER_IMAGE_BACK: $CI_REGISTRY/student-project-sep-hs-mannheim/greenbox-collective/backend
+  DOCKERFILE_PATH: $WORK_DIR/Dockerfile
+  VERSION: $CI_PIPELINE_ID
+  TAG: $CI_PIPELINE_ID
+  APP_FRONT: greenbox-hmc-frontend
+  APP_BACK: greenbox-hmc-backend
+  #   TAG: $CI_COMMIT_REF_SLUG
+
+stages:
+ - build
+ - docker
+ - deploy
+
+build-frontend:
+  stage: build
+  image: node:latest
+  cache:
+    paths:
+    - ./frontend/node_modules/
+  before_script:
+    - npm --prefix ./frontend install
+  script:
+    - npm run --prefix ./frontend build
+  artifacts:
+    paths:
+      - ./frontend/dist
+    expire_in: 1 week
+
+build-backend:
+  stage: build
+  image: java:8
+  script:
+    - cd ./backend && chmod a+x ./mvnw && ./mvnw package && cd -
+  artifacts:
+    paths:
+      - ./backend/target/hmc-backend.jar
+    expire_in: 1 week
+
+docker:
+  stage: docker
+  image: docker:18.09.4
+  dependencies:
+    - build-frontend
+    - build-backend
+  services:
+    - docker:18.09.4-dind
+  before_script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  script:
+    - docker build -t $DOCKER_IMAGE_FRONT:$TAG ./frontend/
+    - docker build -t $DOCKER_IMAGE_BACK:$TAG ./backend/
+    - docker push $DOCKER_IMAGE_FRONT:$TAG
+    - docker push $DOCKER_IMAGE_BACK:$TAG
+
+deploy:
+  stage: deploy
+  image: atolia/alpine-kubectl
+  environment:
+    name: greenbox
+    url: https://students.caruso.cf/
+  script:
+    - mkdir -p ~/.kube
+    - echo ${KUBECFG} | base64 -d > ~/.kube/config
+    - kubectl config get-contexts
+    - kubectl config use-context dev.caruso.cf
+    - sed 's|_APP_NAME_FRONT|'$APP_FRONT'|g; s|_DOCKER_IMAGE_NAME_FRONT|'$DOCKER_IMAGE_FRONT:$TAG'|g;' kubernetes.tpl.yml  > kubernetes1.yml
+    - sed 's|_APP_NAME_BACK|'$APP_BACK'|g; s|_DOCKER_IMAGE_NAME_BACK|'$DOCKER_IMAGE_BACK:$TAG'|g;' kubernetes1.yml  > kubernetes.yml
+    - kubectl  delete -f kubernetes.yml || true
+    - kubectl  create -f kubernetes.yml
+  artifacts:
+    paths:
+    - ./kubernetes.yml
+    expire_in: 1 week
+
+  only:
+    - master
+    

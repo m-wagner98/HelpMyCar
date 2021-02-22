@@ -1,0 +1,8 @@
+{
+  "driver": [
+    "dtc",
+    "geolocation",
+    "basicvehicledata",
+    "checkcontrolmessages"
+  ]
+}

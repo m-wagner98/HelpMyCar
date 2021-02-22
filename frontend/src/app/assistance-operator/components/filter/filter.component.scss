@@ -1,0 +1,88 @@
+@import "../../../shared/styles/mixins.scss", "../../../shared/styles/colors.scss";
+
+.ringAn {
+  // @include iconSize(2.25em);
+  color: $lightgrey-text;
+  font-size: 222%;
+}
+
+.circle {
+  // @include iconSize(2.25em);
+  font-size: 222%;
+  z-index: 10;
+}
+
+#status-open {
+  .circle {
+    color: $lightblue;
+  }
+}
+
+#in-progress {
+  .circle {
+    color: $turquoise;
+  }
+  ng-deep .description .tooltip-inner{
+
+  }
+}
+
+#service-vehicle-on-the-way {
+  .circle {
+    color: $neon-green;
+  }
+}
+
+#closed {
+  .circle {
+    color: $icon-grey;
+  }
+}
+
+.circle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5em;
+  margin-left: -0.5em;
+
+  mat-icon {
+    position: absolute;
+  }
+}
+
+::ng-deep .description .tooltip-inner {
+  background-color: #676767;
+  color: #FBFBFB;
+  border-radius: 20px;
+  padding: 14px;
+  width: max-content;
+}
+
+::ng-deep .description .arrow::before {
+  border-right-color: #676767;
+}
+
+::ng-deep .tooltip.show {
+ // opacity: 1;
+}
+
+// unfinished tooltip
+// #filter-description {
+//   background-color: #676767;
+//   color: #FBFBFB;
+//   padding: 12px 20px;
+//   margin-bottom: 1em;
+//   border-radius: 20px;
+//   // display: none;
+//   position: fixed;
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     left: -18px;
+//     border-width: 10px;
+//     border-style: solid;
+//     border-color: transparent #676767 transparent transparent;
+//   }
+// }

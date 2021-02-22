@@ -1,0 +1,68 @@
+@import "app/shared/styles/fonts.scss", "app/shared/styles/colors.scss";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  font: $regular-manrope;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+mat-icon {
+  // set curser behavior to normal
+  cursor: default;
+  // stop user from selecting them like text
+  user-select: none;
+}
+
+// add this calls to make it appear clickable
+.pointer {
+  cursor: pointer !important;
+}
+
+//disables weird white outline on focused (clicked) elements
+button:focus {
+  outline: none;
+}
+
+.dialog {
+  mat-dialog-container {
+
+    background: $semi-dark-grey;
+    color: $white-font;
+    border-radius: 15px;
+    overflow: visible;
+
+    button {
+      border-radius: 15px;
+      background: $grey;
+      color: $white-font;
+      margin-bottom: 1em;
+    }
+  }
+
+  .mat-dialog-actions {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .mat-select-value, .mat-select-arrow {
+    color: $white-font;
+  }
+
+  #request {
+    text-align: center;
+  }
+}

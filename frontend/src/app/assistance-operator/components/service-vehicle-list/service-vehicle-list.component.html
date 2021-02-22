@@ -1,0 +1,47 @@
+<mat-card *ngIf="this.helpRequest.status === 'IN_PROGRESS'">
+  <mat-card-title>
+    <button [ngClass]="{'filterActive' : this.criteria === 'TOWING_VEHICLE'}" mat-raised-button
+            (click)="toggleTowing()">
+      <img alt="towing logo" src="assets/towing_logo.svg">
+    </button>
+    <button [ngClass]="{'filterActive' : this.criteria === 'ON_SITE_VEHICLE'}" mat-raised-button
+            (click)="toggleOnSite()">
+      <img alt="on-site logo" src="../../../../assets/onsite_logo.svg">
+    </button>
+  </mat-card-title>
+  <!--<p *ngIf="serviceVehicles.length === 0" id="sorry"><strong>Sorry, no service vehicle available... <br>:'( </strong>
+  </p>-->
+  <mat-card-content *ngIf="serviceVehicles.length !== 0">
+    <div *ngFor="let serviceVehicle of serviceVehicles | filterServiceVehicles: criteria">
+      <app-service-vehicle (click)="onSelectVehicleInList(serviceVehicle)"
+                           (serviceVehicleConfirmed)='serviceVehicleConfirmedEvent($event)'
+                           [ngClass]="{'selected' : selected === serviceVehicle }"
+                           [serviceVehicle]='serviceVehicle'>
+      </app-service-vehicle>
+    </div>
+  </mat-card-content>
+</mat-card>
+<mat-card *ngIf="this.helpRequest.status === 'SERVICE_VEHICLE_ON_THE_WAY'">
+  <div class="box">
+    <div *ngIf="this.assignedServiceVehicle" class="content">
+      <img alt="{{imgALT}}" src="{{imgSRC}}">
+      <div class="details">
+        <p>Service Vehicle is on the way.<br>
+          Sent vehicle: {{assignedServiceVehicle?.vin}}<br>
+          Distance: {{assignedServiceVehicle?.distance}} km</p>
+      </div>
+      <button (click)="mechanicArrived()" id="mechanic-arrived" mat-raised-button>Mechanic Arrived!</button>
+    </div>
+  </div>
+</mat-card>
+<mat-card *ngIf="this.helpRequest.status === 'CLOSED'">
+  <div class="box">
+    <div *ngIf="this.assignedServiceVehicle" class="content">
+      <img alt="{{imgALT}}" src="{{imgSRC}}">
+      <div class="details">
+        <p>Sent vehicle: {{assignedServiceVehicle?.vin}}</p>
+        <p>Service Vehicle arrived.</p>
+      </div>
+    </div>
+  </div>
+</mat-card>

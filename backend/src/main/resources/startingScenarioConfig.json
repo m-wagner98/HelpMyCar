@@ -1,0 +1,17 @@
+[
+  {
+    "vin": "V1RTUALV1N0000002",
+    "user": "marioKopper",
+    "status": "CLOSED"
+  },
+  {
+    "vin": "V1RTUALV1N0000S06",
+    "user": "michaelRoss",
+    "status": "SERVICE_VEHICLE_ON_THE_WAY"
+  },
+  {
+    "vin": "V1RTUALV1N0000S07",
+    "user": "rickSanchez",
+    "status": "OPEN"
+  }
+]

@@ -1,0 +1,140 @@
+@import "../../../shared/styles/colors.scss";
+
+$chat-box-height: 20em;
+$footer-height: 2.5em;
+$animation-speed: 280ms;
+
+#footer {
+  border: solid 1px black;
+  display: flex;
+  background-color: $lightgrey;
+  padding: 5px 0 5px 5px;
+  height: $footer-height !important;
+  border-radius: 15px;
+
+  #arrow-icon {
+    margin: auto 0 0 auto;
+    transition: transform $animation-speed cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  }
+
+  #send-icon {
+    position: relative;
+    top: 3px;
+    color: black;
+    font-size: 18px;
+    padding-left: 3.5px;
+  }
+
+  #send-wrapper {
+    background: white;
+    z-index: auto;
+    margin-left: 15px !important;
+    border-radius: 25px;
+    height: 90%;
+  }
+
+  textarea {
+    box-sizing: initial;
+    background: #FFFFFF;
+    margin-top: 2.3px;
+    padding-left: 7px;
+  }
+
+  label {
+    width: 100%;
+  }
+
+  mat-form-field {
+    width: 85%;
+  }
+
+  ::ng-deep .mat-form-field-infix {
+    border-top: 0;
+    padding: 0;
+  }
+
+
+  textarea {
+    border-radius: 15px;
+  }
+
+}
+
+.mat-badge-content {
+  background: $white-font;
+  color: #000;
+}
+
+.header {
+  color: $white-font;
+  text-align: center;
+  background: $lightgrey;
+  border: 1px solid #FFFFFF;
+  border-radius: 15px;
+
+  img {
+    float: right;
+    width: 2.5em;
+    height: 2.5em;
+    margin-right: 10px;
+    margin-top: 4px;
+  }
+
+  mat-icon {
+    float: left;
+    margin-left: 7px;
+    margin-top: 7px;
+    color: white;
+  }
+
+  p {
+    margin-top: 8px;
+  }
+}
+
+.lastName {
+  font-weight: bold;
+}
+
+#chat-box {
+  height: $chat-box-height;
+  background-color: $semi-dark-grey;
+  overflow-y: auto;
+  padding: 5px;
+  width: 100%;
+
+  mat-card {
+    max-width: 80%;
+    margin-bottom: 1em;
+    word-break: break-word;
+    color: $white-font;
+    border-radius: 10px;
+  }
+}
+
+.sent-message {
+  background-color: $lightgrey;
+  box-shadow: 0 3px 6px #00000029;
+  margin-left: auto;
+}
+
+.received-message {
+  background-color: $lightgrey;
+  box-shadow: 0 3px 6px #00000029;
+}
+
+#slide-up-wrapper {
+  overflow-y: hidden;
+  width: 100%;
+  height: 0;
+  transition: all $animation-speed cubic-bezier(0.390, 0.575, 0.565, 1.000);
+}
+
+.slide-up-bottom {
+  height: ($chat-box-height + $footer-height) !important;
+}
+
+.rotate-180 {
+  transition: all $animation-speed cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  transform: rotate(180deg);
+}

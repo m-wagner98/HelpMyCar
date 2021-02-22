@@ -1,0 +1,31 @@
+<div *ngIf="vehicleInfo" id="wrapper">
+  <p *ngIf="driver.vinList.length === 1"><strong>My Car</strong></p>
+  <p *ngIf="driver.vinList.length > 1"><strong>My Cars</strong></p>
+  <div *ngFor="let vin of driver.vinList, let i = index">
+    <table>
+      <tr>
+        <td>Vin</td>
+        <td>{{vin}}</td>
+      </tr>
+      <tr>
+        <td>Model</td>
+        <td>
+          {{vehicleInfo?.inVehicleData[i].response.basicVehicleData.dataPoint.value[0].modelName}}
+        </td>
+      </tr>
+      <tr>
+        <td>Color</td>
+        <td>
+          {{vehicleInfo?.inVehicleData[i].response.basicVehicleData.dataPoint.value[0].colorText}}
+        </td>
+      </tr>
+      <tr>
+        <td>Location</td>
+        <td>
+          {{vehicleInfo?.inVehicleData[i] | reverseGeocode | async}}
+        </td>
+      </tr>
+    </table>
+    <br>
+  </div>
+</div>

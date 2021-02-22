@@ -1,0 +1,150 @@
+@import "../../../shared/styles/mixins.scss", "../../../shared/styles/colors.scss", "../../../shared/styles/fonts.scss";
+
+$marginBetween: 0.625em;
+
+
+.outer-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .img-wrapper {
+    justify-content: center;
+    display: flex;
+    height: 60px;
+  }
+
+  p {
+    white-space: pre-line;
+    text-align: center;
+  }
+}
+
+.icon {
+  flex: 0 1 auto;
+  @include iconSize(50px);
+}
+
+.progress-wrapper {
+  margin-top: $marginBetween * 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+
+  .circle {
+    color: $lightgrey-status;
+    @include iconSize(30px);
+  }
+
+  .line {
+    color: $lightgrey;
+    @include iconSize(30px);
+    margin: 0 $marginBetween;
+
+  }
+
+  .already-selected {
+    .line {
+      color: $lightgrey-text;
+    }
+
+    .circle {
+      color: $white-font;
+    }
+  }
+
+}
+
+p {
+  margin-top: $marginBetween;
+  color: $lightgrey-text;
+}
+
+.chat-wrapper {
+  margin-right: 0.625em;
+  align-self: flex-end;
+}
+
+#chat {
+  width: 65px;
+}
+
+.mat-badge-content {
+  right: 4px !important;
+  top: -6px !important;
+  background: #31323C;
+  font: $regular-manrope;
+  font-size: 10px;
+  line-height: 20px;
+  color: $white-font;
+  border: 1px solid $white-font;
+}
+
+
+mat-card {
+  width: 90%;
+  height: 20.375em;
+  background: $darkgrey;
+  flex-shrink: 0;
+  position: relative;
+  transition: left .4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 1em;
+  border-radius: 20px;
+
+  p {
+    font: $light-manrope;
+    color: $white-font;
+    flex: 1;
+    display: table;
+    margin: auto;
+    text-align: center;
+  }
+
+  img {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+button {
+  background: #FFFFFF4D;
+  border: 2px solid $white-font;
+  border-radius: 45px;
+  color: $white-font;
+  width: 50%;
+}
+
+.car-visualization {
+  height: 8em;
+}
+
+
+.check-control-signs {
+  color: $red;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+
+  .check-control-sign-icon {
+    width: 40px;
+    padding-right: 0.5em;
+    margin: 0!important;
+
+  }
+}
+
+#geocoding {
+  padding-top: 1em;
+}

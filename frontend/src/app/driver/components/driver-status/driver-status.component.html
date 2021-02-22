@@ -1,0 +1,53 @@
+<div *ngIf='status' class="outer-wrapper">
+  <div class="wrapper">
+    <div class="img-wrapper">
+      <img alt="status-icon" src='assets/status_icons/{{getStatusIcon()}}.svg'>
+    </div>
+    <p>{{getStatusTranslation()}}</p>
+
+    <div class="progress-wrapper">
+
+      <div [ngClass]="{'already-selected': isAlreadySelected[0]}" id="status-open">
+        <mat-icon class="circle">fiber_manual_record</mat-icon>
+      </div>
+
+      <div [ngClass]="{'already-selected': isAlreadySelected[1]}" id="in-progress">
+        <mat-icon class="line">remove</mat-icon>
+        <mat-icon class="circle">fiber_manual_record</mat-icon>
+      </div>
+
+      <div [ngClass]="{'already-selected': isAlreadySelected[2]}"
+           id="service-vehicle-on-the-way">
+        <mat-icon class="line">remove</mat-icon>
+        <mat-icon class="circle">fiber_manual_record</mat-icon>
+      </div>
+
+      <div [ngClass]="{'already-selected': isAlreadySelected[3]}" id="closed">
+        <mat-icon class="line">remove</mat-icon>
+        <mat-icon class="circle">fiber_manual_record</mat-icon>
+      </div>
+    </div>
+
+  </div>
+  <mat-card *ngIf="vehicleInfo" [routerLink]="['../' , 'car-analysis']" class="pointer"
+            id="{{vehicleInfo.inVehicleData[0].identifier.value}}">
+    <p>{{vehicleInfo.inVehicleData[0].identifier.value}}<br>
+      {{vehicleInfo.inVehicleData[0].response.basicVehicleData.dataPoint.value[0].brandName}} {{vehicleInfo.inVehicleData[0].response.basicVehicleData.dataPoint.value[0].modelName}}
+    </p>
+    <app-driver-car-visualization [vin]="vehicleInfo.inVehicleData[0].identifier.value"></app-driver-car-visualization>
+    <div class="check-control-signs">
+      <img *ngFor="let checkControlMessage of vehicleInfo?.inVehicleData[0].response.checkControlMessages?.dataPoint.value" 
+          alt="check control sign icon" class="check-control-sign-icon"
+          src="{{getCheckControlSignSvg(checkControlMessage.value)}}">
+    </div>
+    <p id="geocoding">{{vehicleInfo.inVehicleData[0] | reverseGeocode | async}}</p>
+  </mat-card>
+  <div [style.visibility]="showBackButton ? 'visible' : 'hidden'" class="button-wrapper">
+    <button (click)="goBack()" mat-raised-button>
+      Go Back
+    </button>
+  </div>
+  <div [matBadge]="nrOfNewMessages || null" class="chat-wrapper">
+    <img [routerLink]="['../', 'chat']" alt="chat-icon" class="pointer" id="chat" src="assets/chat_icon.svg">
+  </div>
+</div>

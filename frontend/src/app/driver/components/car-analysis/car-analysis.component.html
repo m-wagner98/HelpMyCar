@@ -1,0 +1,48 @@
+<div>
+  <div id="selectedVin" *ngIf="vehicleInfo && selectedVIN">
+    <p>
+      {{selectedVIN}}<br>
+      {{vehicleInfo?.inVehicleData[getDataPositionFromVehicleInfoList(selectedVIN)].response.basicVehicleData?.dataPoint.value[0].brandName}}
+      {{vehicleInfo?.inVehicleData[getDataPositionFromVehicleInfoList(selectedVIN)].response.basicVehicleData?.dataPoint.value[0].modelName}}
+    </p>
+    <app-driver-car-visualization [vin]="selectedVIN"></app-driver-car-visualization>
+    <br>
+    <app-check-control-message-list id="check-control-message-list" [selectedVIN]="selectedVIN"
+                                    [vehicleInfo]="vehicleInfo">
+    </app-check-control-message-list>
+  </div>
+  <br>
+  <p>My Car Data</p>
+  <table>
+    <tr>
+      <td>Vin</td>
+      <td>{{selectedVIN}}</td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td>
+        {{vehicleInfo?.inVehicleData[getDataPositionFromVehicleInfoList(selectedVIN)].response.basicVehicleData?.dataPoint.value[0].modelName}}
+      </td>
+    </tr>
+    <tr>
+      <td>Color</td>
+      <td>
+        {{vehicleInfo?.inVehicleData[getDataPositionFromVehicleInfoList(selectedVIN)].response.basicVehicleData?.dataPoint.value[0].colorText}}
+      </td>
+    </tr>
+    <tr>
+      <td>Location</td>
+      <td>
+        {{vehicleInfo?.inVehicleData[getDataPositionFromVehicleInfoList(selectedVIN)] | reverseGeocode | async}}
+      </td>
+    </tr>
+    <br>
+    <tr
+      *ngIf="vehicleInfo?.inVehicleData[getDataPositionFromVehicleInfoList(selectedVIN)]?.response.dtc?.dataPoint.value[0].dtcs[0]?.dtcId">
+      <td>DTC</td>
+    </tr>
+  </table>
+  <br>
+
+
+</div>

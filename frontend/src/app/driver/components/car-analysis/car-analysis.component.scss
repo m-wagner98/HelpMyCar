@@ -1,0 +1,17 @@
+@import "../../../shared/styles/colors.scss";
+
+* {
+  color: $white-font;
+}
+
+#selectedVin {
+  text-align: center;
+}
+
+td {
+  padding-right: 1em;
+}
+
+#check-control-message-list {
+  border-radius: 20px;
+}

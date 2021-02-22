@@ -1,0 +1,17 @@
+<div class="container-wrapper">
+  <img src="../../assets/iphonex_border.png" class="border-img" alt="phone border">
+
+  <div id="app">
+  
+    <header>
+      <app-menue *ngIf="!backButton && !loginPage"></app-menue>
+      <mat-icon class="pointer" (click)="goBack()" *ngIf="backButton && !loginPage">arrow_back_ios</mat-icon>
+      <span id="help-my-car"><span class="font-bold-manrope">Help</span>MyCar</span>
+      <app-personal-menu *ngIf="!loginPage"></app-personal-menu>
+    </header>
+  
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</div>

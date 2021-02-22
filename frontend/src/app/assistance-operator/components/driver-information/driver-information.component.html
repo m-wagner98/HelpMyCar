@@ -1,0 +1,64 @@
+<mat-expansion-panel [hideToggle]="true" [expanded]="isPanelOpen" [disabled]="true">
+  <mat-expansion-panel-header [collapsedHeight]="'20%'" [expandedHeight]="'40%'">
+    <mat-panel-title>
+      <h2>Customer Information</h2>
+      <div id="title-content-wrapper">
+        <div class="img-wrapper">
+          <img [src]="getIcon()" alt="car-icon" class="car-icon">
+        </div>
+        <table id="personal-data">
+          <tr>
+            <td class="table-description">Name:</td>
+            <td>{{helpRequest?.driver?.firstName}} {{helpRequest?.driver?.lastName}}</td>
+          </tr>
+          <tr>
+            <td class="table-description">Customer number:</td>
+            <td>{{helpRequest?.driver?.customerNumber}}</td>
+          </tr>
+          <tr>
+            <td class="table-description">Entry date:</td>
+            <td>{{helpRequest?.driver?.entryDate}}</td>
+          </tr>
+          <tr>
+            <td class="table-description">Residence:</td>
+            <td>{{helpRequest?.driver?.residence}}</td>
+          </tr>
+          <tr>
+            <td class="table-description">Phone number:</td>
+            <td>{{helpRequest?.driver?.phoneNumber}}</td>
+          </tr>
+        </table>
+      </div>
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <div class="expansion-content-wrapper">
+    <div class="img-wrapper"></div>
+    <table id="vehicle-data">
+      <tr>
+        <td class="table-description">Brand:</td>
+        <td>{{basicVehicleData?.brandName}}</td>
+      </tr>
+      <tr>
+        <td class="table-description">Model:</td>
+        <td>{{basicVehicleData?.modelName}}</td>
+      </tr>
+      <tr>
+        <td class="table-description">Color:</td>
+        <td>{{basicVehicleData?.colorText}}</td>
+      </tr>
+      <tr>
+        <td class="table-description">Car type:</td>
+        <td>{{basicVehicleData?.bodyType}}</td>
+      </tr>
+      <tr>
+        <td class="table-description">Production data:</td>
+        <td>{{basicVehicleData?.productionDate}}</td>
+      </tr>
+    </table>
+  </div>
+</mat-expansion-panel>
+
+<div id="down-wrapper">
+  <mat-icon id="toggle-arrow" (click)="togglePanel()" class="pointer" [ngClass]="arrowClass">keyboard_arrow_down
+  </mat-icon>
+</div>
