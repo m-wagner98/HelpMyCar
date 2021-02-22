@@ -10,7 +10,9 @@ which is used to support both the driver and the assistance operator.
 The project consists of two frontend web-apps and a backend application:
 - A driver app to request help in the case of a car failure.
 - A dashbord app where an assistant operator can see and respond to help requests.
-- A backend application that acts as a REST-service for the frontend and sends http-requests to the Caruso-API to gather vehicle information .
+- A backend application that acts as a REST-service for the frontend and sends http-requests to the Caruso-API to gather vehicle information.
+
+<img src="https://github.com/m-wagner98/HelpMyCar/edit/main/Screenshots/AOD.png" alt="assistance operator dashboard" width="635.33" height="308.33">
 
 ## Team
 
