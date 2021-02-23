@@ -14,9 +14,9 @@ The project consists of two frontend web-apps and a backend application:
 
 <br><br>
 <img src="Screenshots/AOD.png" alt="assistance operator dashboard">
-<br>
-<img src="Screenshots/app1.png" alt="app screenshot 1">
-<img src="Screenshot/app2.png" alt="app screenshot 2">
+<br> <br>
+<img src="Screenshots/app1.png" alt="app screenshot 1" width="211.5">
+<img src="Screenshot/app2.png" alt="app screenshot 2" width="211.5">
 
 ## Team
 
